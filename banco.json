@@ -1,0 +1,66 @@
+{
+  "filmes": {
+    "filme01": {
+      "id": "filme01",
+      "name": "Vento levou"
+    },
+    "filme02": {
+      "id": "filme02",
+      "name": "sdsdsdsd levou"
+    },
+    "filme03": {
+      "id": "filme03",
+      "name": "ET - Extra terrestre"
+    },
+    "filme04": {
+      "id": "filme04",
+      "name": "Uma linda mulher"
+    },
+    "filme05": {
+      "id": "filme05",
+      "name": "Matrix"
+    },
+    "filme06": {
+      "id": "filme06",
+      "name": "Gladiador"
+    }
+  },
+  "bandasrock": {
+    "BAN-01": {
+      "id": "BAN-01",
+      "name": "Iron Maiden",
+      "country": "UK",
+      "style": "Metal"
+    },
+    "BAN-02": {
+      "id": "BAN-02",
+      "name": "ACDC",
+      "country": "Australian",
+      "style": "Metal"
+    },
+    "BAN-03": {
+      "id": "BAN-03",
+      "name": "Raul Seixas",
+      "country": "Brazil",
+      "style": "Rock"
+    },
+    "BAN04": {
+      "id": "BAN04",
+      "name": "Kiss",
+      "country": "USA",
+      "style": "Rock"
+    },
+    "BAN05": {
+      "id": "BAN05",
+      "name": "Outra banda",
+      "country": "Brazil",
+      "style": "Rock"
+    },
+    "BAN-07": {
+      "id": "BAN-07",
+      "name": "Metallica",
+      "country": "USA",
+      "style": "Rock"
+    }
+  }
+}

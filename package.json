@@ -1,0 +1,30 @@
+{
+  "name": "aula07sdmnoite1104",
+  "version": "1.0.0",
+  "description": "# Criando uma API RESTful com NodeJS e Express",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js",
+    "server": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmamorim/Aula07SDMNoite1104.git"
+  },
+  "author": "Marcelo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mmamorim/Aula07SDMNoite1104/issues"
+  },
+  "homepage": "https://github.com/mmamorim/Aula07SDMNoite1104#readme",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "config": "^3.3.7",
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "jsonwebtoken": "^8.5.1",
+    "lowdb": "^3.0.0"
+  }
+}

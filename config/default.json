@@ -1,0 +1,6 @@
+{
+    "server": {
+        "port": 4050,
+        "path_root": "/api/v1/"
+    }
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste API Bandas e filmes</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+
+    <div id="app">
+
+        <topo></topo>
+
+        <button @click="reqGET" class="border rounded bg-gray-50 p-1 mx-1">Pegar bandas (GET)</button>
+        <button @click="reqPOST" class="border rounded bg-gray-50 p-1 mx-1">Incluir bandas (POST)</button>
+        <button @click="reqPUT" class="border rounded bg-gray-50 p-1 mx-1">Alterar bandas (PUT)</button>
+
+        <div class="grid grid-cols-3 justify-start px-2">
+            <div class="border rounded px-2 my-2 bg-gray-100">
+                Resposta do servidor:
+                <div class="border rounded px-2 my-2 bg-white">
+                    {{mensagem}}
+                    <div class="border rounded px-2 my-2 bg-white">
+                        <div v-for="(elem,index,key) in lista" :key="key">
+                            <span class="mr-1 font-bold">id:</span>
+                            <span>{{elem.id}}</span>
+                            <span class="mx-1 font-bold">name:</span>
+                            <span>{{elem.name}}</span>
+                            <button @click="reqDELETE(elem.id)" class="text-xs border rounded bg-red-300 px-1 ml-2">
+                                <span style="font-size: 7pt;">❌</span> excluir
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border rounded px-2 my-2 bg-gray-100">
+                <div class="my-2">
+                    <span>ID:</span> <input type="text" v-model="id">
+                </div>
+                <div class="my-2">
+                    <span>Name:</span> <input type="text" v-model="name">
+                </div>
+                <button @click="reqPOST" class="text-sm border rounded bg-gray-50 px-1 ml-2">
+                    <span style="font-size: 9pt;">➕</span>
+                    Incluir (POST)
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="./main.js" type="module">
+
+
+    </script>
+</body>
+
+</html>
